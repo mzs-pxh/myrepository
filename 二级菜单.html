@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+       .c>li{
+            width: 80px;
+            height: 30px;
+            background: #abadde;
+            list-style:none;
+        }
+        li{
+            position: relative;
+        }
+        .b{
+            position: absolute;
+            left:80px;
+            top:0;
+        }
+        .b>li{
+            width: 80px;
+            height: 30px;
+            background: #996666;
+            list-style:none;
+            display: none;
+        }
+        .c>li:hover>.b>li{
+            display: block;
+        }
+        .d>li{
+            width: 80px;
+            height: 30px;
+            background:blue;
+            list-style:none;
+        }
+        .d{
+            position: absolute;
+            left:80px;
+            top:0;
+            display: none;
+        }
+        .b>li:hover .d{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+     <ul class="c">
+         <li class="a">1
+              <ul class="b">
+                  <li>1
+                  <ul class="d"><li>1</li></ul>
+                  </li>
+                  <li>2
+                      <ul class="d"><li>1</li></ul></li>
+                  <li>3<ul class="d"><li>1</li></ul></li>
+                  </ul>
+         </li>
+         <li class="a">2
+             <ul class="b">
+                 <li>1<ul class="d"><li>1</li></ul></li>
+                 <li>2<ul class="d"><li>1</li></ul></li>
+                 <li>3<ul class="d"><li>1</li></ul></li></ul></li>
+         <li class="a">3
+             <ul class="b">
+                 <li>1<ul class="d"><li>1</li></ul></li>
+                 <li>2<ul class="d"><li>1</li></ul></li>
+                 <li>3<ul class="d"><li>1</li></ul></li></ul></li>
+         <li class="a">4
+             <ul class="b">
+                 <li>1<ul class="d"><li>1</li></ul></li>
+                 <li>2<ul class="d"><li>1</li></ul></li>
+                 <li>3<ul class="d"><li>1</li></ul></li></ul>
+         </li>
+     </ul>
+</body>
+</html>
